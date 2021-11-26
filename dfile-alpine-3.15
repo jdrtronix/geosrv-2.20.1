@@ -1,0 +1,8 @@
+FROM alpine:3.15
+
+ENV start "/var/geoserver"
+
+RUN mkdir /var/geoserver &&\
+    cd !$
+
+CMD [ "/bin/sh" ]

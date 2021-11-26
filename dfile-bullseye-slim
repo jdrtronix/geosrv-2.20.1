@@ -1,0 +1,8 @@
+FROM debian:bullseye-slim
+
+ENV start "/var/geoserver"
+
+RUN mkdir /var/geoserver &&\
+    cd !$
+
+CMD [ "/bin/bash" ]

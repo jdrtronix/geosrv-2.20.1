@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+
+ENV start "/var/geoserver"
+
+RUN apt update &&\
+    apt install openjdk-11-jre &&\
+    
+    mkdir /var/geoserver &&\
+    cd !$
+
+CMD [ "/bin/bash" ]
